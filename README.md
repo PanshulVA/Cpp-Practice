@@ -103,3 +103,27 @@ These are all the questions throught the semester our teacher will give accordin
     int *p = a + 1;
     cout << *(p+2) << " " << *(p-1);
     ```
+
+## 28th of January in 2026
+### C++ Array Manipulation Exercises
+
+**1. Array Input and Display**
+* **Task:** Write a C++ program to read and display elements of an array.
+
+**2. Sum of Array Elements**
+* **Task:** Write a C++ program to find the sum of all elements in an array.
+
+**3. Copying Arrays**
+* **Task:** Write a C++ program to copy one array into another.
+
+**4. Accessing Elements by Index**
+* **Task:** Write a C++ program to print array elements at even index positions.
+
+**5. 2D Array (Matrix) Input and Display**
+* **Task:** Write a C++ program to read and display a 2D array (matrix).
+
+**6. Row-wise Matrix Traversal**
+* **Task:** Write a C++ program to print all elements of a matrix in row-wise order.
+
+**7. Column-wise Matrix Traversal**
+* **Task:** Write a C++ program to print all elements of a matrix in column-wise order.
