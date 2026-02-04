@@ -127,3 +127,144 @@ These are all the questions throught the semester our teacher will give accordin
 
 **7. Column-wise Matrix Traversal**
 * **Task:** Write a C++ program to print all elements of a matrix in column-wise order.
+
+## 4th of February in 2026
+### C++ Structures and Pointer-Based Questions
+
+**1. Structure: Student**
+* Create a structure `Student` with:
+    * Roll number
+    * Name
+    * Marks
+* Input details of **5 students**.
+* Display students who scored **more than 75 marks**.
+
+**2. Structure: Employee**
+* Define a structure `Employee` with:
+    * Employee ID
+    * Name
+    * Basic salary
+* Calculate and display **gross salary**:
+    * HRA = 20% of basic salary
+    * DA = 10% of basic salary
+
+**3. Pointer and Array Output Questions**
+* **Task:** Predict the output and explain why.
+
+    **Case 1**
+    ```cpp
+    int arr[] = {10, 20, 30, 40};
+    int *p = arr;
+
+    cout << *p << endl;
+    cout << *(p + 1) << endl;
+    cout << *(p + 3) << endl;
+    ```
+
+    **Case 2**
+    ```cpp
+    int arr[] = {5, 10, 15, 20};
+    int *p = arr + 2;
+
+    cout << *p << endl;
+    cout << *(p - 1) << endl;
+    ```
+
+    **Case 3**
+    ```cpp
+    int arr[5] = {1, 2, 3, 4, 5};
+
+    for(int i = 0; i < 5; i++)
+        cout << *(arr + i) << " ";
+    ```
+
+    **Case 4**
+    ```cpp
+    int arr[] = {2, 4, 6, 8};
+    int *p = arr;
+
+    p++;
+    cout << *p << endl;
+    ```
+
+    **Case 5**
+    ```cpp
+    int arr[] = {7, 14, 21};
+
+    cout << arr[1] << endl;
+    cout << 1[arr] << endl;
+    ```
+
+    **Case 6**
+    ```cpp
+    int arr[] = {10, 20, 30};
+    int *p = arr;
+
+    cout << *p + 1 << endl;
+    cout << *(p + 1) << endl;
+    ```
+
+    **Case 7**
+    ```cpp
+    int arr[] = {3, 6, 9, 12};
+    int *p = arr;
+
+    while(p <= &arr[3]) {
+        cout << *p << " ";
+        p++;
+    }
+    ```
+
+    **Case 8**
+    ```cpp
+    int arr[] = {1, 2, 3};
+    int *p = arr;
+
+    for(int i = 0; i < 3; i++)
+        cout << *(p++) << " ";
+    ```
+
+    **Case 9**
+    ```cpp
+    int arr[] = {10, 20, 30};
+    int *p = arr;
+
+    cout << p << endl;
+    cout << p + 1 << endl;
+    ```
+
+    **Case 10**
+    ```cpp
+    char arr[] = {'A', 'B', 'C'};
+    char *p = arr;
+
+    cout << p << endl;
+    cout << p + 1 << endl;
+    ```
+
+    **Case 11**
+    ```cpp
+    struct Data {
+        int x;
+        int y;
+    };
+
+    Data arr[] = {{1,2}, {3,4}, {5,6}};
+    Data *p = arr;
+
+    cout << p->x << endl;
+    cout << (p + 1)->y << endl;
+    ```
+
+    **Case 12**
+    ```cpp
+    struct Item {
+        int price;
+    };
+
+    Item arr[] = {100, 200, 300};
+    Item *p = arr;
+
+    cout << p[2].price << endl;
+    cout << (*(p + 1)).price << endl;
+    ```
