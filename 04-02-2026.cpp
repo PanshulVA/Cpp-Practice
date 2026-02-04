@@ -141,3 +141,167 @@ int main() {
 //Basic Salary: 100000000.00
 //Gross Salary: 130000000.00
 
+
+
+
+// Q3: Pointer and Array Output Questions
+
+#include <iostream>
+using namespace std;
+
+struct Data {
+    int x;
+    int y;
+};
+
+struct Item {
+    int price;
+};
+
+int main() {
+
+    // Case 1
+    int arr1[] = {10, 20, 30, 40};
+    int *p1 = arr1;
+    cout << *p1 << endl;
+    cout << *(p1 + 1) << endl;
+    cout << *(p1 + 3) << endl;
+
+    cout << endl;
+
+    // Case 2
+    int arr2[] = {5, 10, 15, 20};
+    int *p2 = arr2 + 2;
+    cout << *p2 << endl;
+    cout << *(p2 - 1) << endl;
+
+    cout << endl;
+
+    // Case 3
+    int arr3[5] = {1, 2, 3, 4, 5};
+    for(int i = 0; i < 5; i++)
+        cout << *(arr3 + i) << " ";
+    cout << endl << endl;
+
+    // Case 4
+    int arr4[] = {2, 4, 6, 8};
+    int *p4 = arr4;
+    p4++;
+    cout << *p4 << endl;
+
+    cout << endl;
+
+    // Case 5
+    int arr5[] = {7, 14, 21};
+    cout << arr5[1] << endl;
+    cout << 1[arr5] << endl;
+
+    cout << endl;
+
+    // Case 6
+    int arr6[] = {10, 20, 30};
+    int *p6 = arr6;
+    cout << *p6 + 1 << endl;
+    cout << *(p6 + 1) << endl;
+
+    cout << endl;
+
+    // Case 7
+    int arr7[] = {3, 6, 9, 12};
+    int *p7 = arr7;
+    while(p7 <= &arr7[3]) {
+        cout << *p7 << " ";
+        p7++;
+    }
+    cout << endl << endl;
+
+    // Case 8
+    int arr8[] = {1, 2, 3};
+    int *p8 = arr8;
+    for(int i = 0; i < 3; i++)
+        cout << *(p8++) << " ";
+    cout << endl << endl;
+
+    // Case 9
+    int arr9[] = {10, 20, 30};
+    int *p9 = arr9;
+    cout << p9 << endl;
+    cout << p9 + 1 << endl;
+
+    cout << endl;
+
+    // Case 10
+    char arr10[] = {'A', 'B', 'C'};
+    char *p10 = arr10;
+    cout << p10 << endl;
+    cout << p10 + 1 << endl;
+
+    cout << endl;
+
+    // Case 11
+    Data arr11[] = {{1,2}, {3,4}, {5,6}};
+    Data *p11 = arr11;
+    cout << p11->x << endl;
+    cout << (p11 + 1)->y << endl;
+
+    cout << endl;
+
+    // Case 12
+    Item arr12[] = {100, 200, 300};
+    Item *p12 = arr12;
+    cout << p12[2].price << endl;
+    cout << (*(p12 + 1)).price << endl;
+
+    return 0;
+}
+
+/*
+==================== OUTPUT ====================
+
+Case 1 Output:
+10
+20
+40
+
+Case 2 Output:
+15
+10
+
+Case 3 Output:
+1 2 3 4 5
+
+Case 4 Output:
+4
+
+Case 5 Output:
+14
+14
+
+Case 6 Output:
+11
+20
+
+Case 7 Output:
+3 6 9 12
+
+Case 8 Output:
+1 2 3
+
+Case 9 Output:
+<Address of arr9[0]>
+<Address of arr9[1]>
+
+Case 10 Output:
+ABC
+BC
+
+Case 11 Output:
+1
+4
+
+Case 12 Output:
+300
+200
+
+===============================================
+*/
