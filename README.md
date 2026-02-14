@@ -127,3 +127,74 @@ These are all the questions throught the semester our teacher will give accordin
 
 **7. Column-wise Matrix Traversal**
 * **Task:** Write a C++ program to print all elements of a matrix in column-wise order.
+
+## 4th of February in 2026
+### C++ Structure Exercises
+
+**1. Student Structure and Filtering**
+* **Task:** Create a structure `Student` with:
+    * roll number
+    * name
+    * marks
+    * Input details of 5 students and display students who scored more than 75 marks.
+
+**2. Employee Structure and Salary Calculation**
+* **Task:** Define a structure `Employee` containing:
+    * employee ID
+    * name
+    * basic salary
+    * Calculate and display gross salary (basic + 20% HRA + 10% DA).
+
+## 11th of February in 2026
+### C++ Dynamic Memory and Pointer Exercises
+
+**1. Dynamic Array Allocation**
+* **Task:** Write a C++ program that dynamically allocates memory for an array of integers using `new` based on the size input by the user. The program should:
+    * Allow the user to enter the size of the array.
+    * Allow the user to enter the values for the array.
+    * Print the array.
+    * Free the dynamically allocated memory using `delete[]`.
+
+**2. Swap Two Numbers Using Pointers**
+* **Task:** Write a C++ program that swaps two numbers using pointers. The program should:
+    * Declare two integer variables.
+    * Use a pointer to swap their values.
+    * Print the swapped values.
+
+**3. Dynamic Array of Strings**
+* **Task:** Write a C++ program that dynamically allocates memory for an array of strings (an array of pointers). The program should:
+    * Allow the user to input multiple strings.
+    * Print all the strings using the array of pointers.
+    * Free the allocated memory for each string and the array of pointers using `delete[]`.
+
+**4. Circular Buffer Implementation**
+* **Task:** Write a C++ program that implements a circular buffer using a dynamically allocated array. The program should:
+    * Dynamically allocate memory for the buffer.
+    * Allow the user to add and remove elements.
+    * Handle overflow and underflow conditions.
+    * Properly deallocate the memory used by the buffer.
+
+**5. Pointer to a Constant Variable**
+* **Task:** Write a C++ program that demonstrates the use of a pointer to a constant variable. The program should:
+    * Declare a constant variable and a pointer to it.
+    * Show how you can read the value pointed to by the pointer, but not modify it.
+
+**6. Returning a Reference**
+* **Task:** Write a C++ program where a function returns a reference to a local variable.
+    * Identify potential problems and how to avoid them.
+    * Implement a version where the function returns a reference to a static or globally declared variable.
+
+## 13th of February in 2026
+### C++ Graph Algorithm Exercises
+
+**1. Dijkstra's Algorithm for Shortest Path**
+* **Task:** Write a C++ program to implement Dijkstra's Algorithm to find the shortest paths from a source vertex to all other vertices. The program should:
+    * Represent a weighted graph using an adjacency list.
+    * Use a priority queue (min-heap) to efficiently select the next vertex with the minimum distance.
+    * Initialize the source vertex with a distance of 0 and all other vertices with infinity.
+    * Calculate and display the final shortest distances for all vertices.
+
+<details>
+<summary><b>Information</b></summary>
+The above question(13th of Feb) is of dijkstra's algorithm given to us in Discrete Mathematics class.
+</details>
