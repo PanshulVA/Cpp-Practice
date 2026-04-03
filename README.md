@@ -197,4 +197,207 @@ These are all the questions throught the semester our teacher will give accordin
 <details>
 <summary><b>Information</b></summary>
 The above question(13th of Feb) is of dijkstra's algorithm given to us in Discrete Mathematics class.
-</details>
+</details>  
+  
+  
+## 18th of February in 2026
+
+### C++ Object-Oriented Programming and Data Structures Exercises
+
+**1. Basic Student Class**
+
+* **Task:**
+
+  * Create a `Student` class with attributes: name, roll number, and marks.
+
+  * Add member functions to input and display student details.
+
+  * Create at least 3 objects and display their data.
+
+**2. BankAccount Constructor and Destructor**
+
+* **Task:**
+
+  * Create a `BankAccount` class.
+
+  * Initialize account number and balance using a constructor.
+
+  * Display a message when the destructor is called.
+
+  * Create objects inside a function to observe destructor behavior.
+
+**3. Employee Class Encapsulation**
+
+* **Task:**
+
+  * Create an `Employee` class.
+
+  * Make salary private.
+
+  * Provide getter and setter functions.
+
+  * Add validation: salary cannot be negative.
+
+**4. Calculator Function Overloading**
+
+* **Task:**
+
+  * Create a class `Calculator`.
+
+  * Overload a function `add()` for:
+
+    * `int`
+
+    * `double`
+
+    * three parameters
+
+**5. Student Class with Dynamic Memory Allocation**
+
+* **Task:**
+
+  * Create a struct `Subject { string name; int marks; }`.
+
+  * Create a class `Student` with:
+
+    * `private:` int roll; string name; `Subject* subjects`; int n;
+
+  * Create a constructor that allocates dynamic memory for `n` subjects.
+
+  * Add member functions: `input()`, `display()`, `total()`, `grade()`.
+
+  * Store `N` students using a pointer to an object array, find the topper, and free all memory properly.
+
+**6. Patient Priority Queue**
+
+* **Task:**
+
+  * Create a struct `Node` containing:
+
+    * Patient data (id, name, severity)
+
+    * `Node* next`
+
+  * Create a class `PatientQueue` implementing:
+
+    * enqueue (based on severity priority)
+
+    * dequeue
+
+    * display
+
+  * Use dynamic memory (`new`/`delete`) and demonstrate queue operations.
+
+**7. Linked List Library System**
+
+* **Task:**
+
+  * Create a struct `BookNode`:
+
+    * `int id; string title; string author; bool issued; BookNode* next;`
+
+  * Create a class `Library` with:
+
+    * `BookNode* head`
+
+    * Functions: `addBook()`, `issueBook(id)`, `returnBook(id)`, `searchBook(title)`, `displayAll()`
+
+  * Use pointers to traverse the linked list and manage memory safely.
+
+**8. Bank Account with Transaction History**
+
+* **Task:**
+
+  * Create a struct `Transaction`:
+
+    * `string type; double amount; string date; Transaction* next;`
+
+  * Create a class `BankAccount`:
+
+    * `private:` accountNo, holderName, balance, `Transaction* historyHead`
+
+    * Functions: `deposit()`, `withdraw()`, `showHistory()`, `showBalance()`
+
+  * Store multiple accounts using a `BankAccount*` array pointer and search account by number.
+
+**9. Course Registration System**
+
+* **Task:**
+
+  * Create a struct `Course`:
+
+    * courseCode, courseName, credits
+
+  * Create a class `Student`:
+
+    * roll, name
+
+    * `Course* registeredCourses` (dynamic)
+
+    * Functions: `registerCourses()`, `dropCourse(code)`, `showCourses()`, `totalCredits()`
+
+  * Store multiple students using pointers and print a list of students registered in a given course.
+
+**10. Directory Tree Structure**
+
+* **Task:**
+
+  * Create a struct `DirNode`:
+
+    * `string name; bool isFile; DirNode* child; DirNode* sibling;`
+
+  * Create a class `DirectoryTree`:
+
+    * Functions: `createFolder(path)`, `createFile(path)`, `list(path)`, `deleteNode(path)`
+
+  * Implement using pointers (tree navigation) and free memory in the destructor.
+  
+    
+    
+## 1st of April in 2026
+
+### C++ Advanced Object-Oriented Use Cases
+
+**1. Student Record System with Classes and Objects**
+
+* **Scenario:** You need to develop a student record management system for a college. The system should allow the addition of student records, modification, and display of records, as well as calculations like average grades.
+* **Tasks:**
+  * **Class Design:** Create a `Student` class with data members like `roll_number`, `name`, and `marks`.
+  * Implement a constructor to initialize student records when an object is created and a destructor to clean up resources if needed.
+  * Include methods like `addStudent()`, `modifyStudent()`, `displayStudent()`, and `calculateAverage()`.
+  * Use overloaded constructors to initialize students with different data (e.g., full info vs just roll number).
+* **Approach:**
+  * **Class and objects:** Use a class to represent the student, encapsulating the details of each student.
+  * **Inheritance:** You could extend this to have subclasses like `GraduateStudent` or `UndergraduateStudent`, which inherit from `Student` and add more specialized data.
+  * **Polymorphism:** Use method overloading for various operations like `addStudent()` (with different types of arguments).
+
+**2. Employee Salary Management System Using File Handling**
+
+* **Scenario:** You need to build an employee salary management system that reads employee records from a file, calculates their salary, and writes the updated data back to the file.
+* **Tasks:**
+  * Create an `Employee` class with attributes like `employee_id`, `name`, and `salary`.
+  * Implement a method `calculateSalary()` which calculates salary based on some business logic (e.g., bonuses, deductions).
+  * Use file handling to:
+    * Read employee data from a text file (`ifstream`).
+    * Write updated employee data back to the file (`ofstream`).
+  * Implement a `main` function that loads employee records from the file, calculates their salary, and saves the updated records back to the file.
+* **Approach:**
+  * **File Handling:** Use `ifstream` to read the employee data and `ofstream` to write the data back after processing.
+  * **Object-Oriented Design:** Use a class to represent employees and encapsulate their data.
+  * **Exception Handling:** Implement error checking to ensure the file exists and is accessible.
+
+**3. Tic-Tac-Toe Game with Classes and Object-Oriented Design**
+
+* **Scenario:** Develop a Tic-Tac-Toe game using object-oriented design principles. The game should allow two players to take turns, check for a winner, and reset the game.
+* **Tasks:**
+  * Create a `Game` class with a board (a 3x3 matrix), turn (to keep track of whose turn it is), and winner (to determine the winner).
+  * Implement methods for:
+    * `resetGame()`: Resets the board.
+    * `makeMove()`: Places a mark on the board.
+    * `checkWinner()`: Checks if there is a winner.
+    * `printBoard()`: Displays the current state of the board.
+  * Implement game logic to alternate between players and check if a player wins or if it’s a draw.
+* **Approach:**
+  * **Classes/Objects:** Use a class to encapsulate game-related data and methods.
+  * **Encapsulation:** Keep game data (board, winner, turn) private inside the class.
+  * **Polymorphism:** You could also extend this with different game modes (e.g., player vs AI).
